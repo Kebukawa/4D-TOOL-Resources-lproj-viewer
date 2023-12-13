@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="7">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<web>
+			<standalone_server>
+				<options>
+					<cache cache_max_size="524288"/>
+				</options>
+				<configuration automatic_session_management="true" session_mode="3"/>
+			</standalone_server>
+			<remote>
+				<configuration automatic_session_management="true" session_mode="3"/>
+			</remote>
+		</web>
+		<general startup_environnement="1"/>
+		<server>
+			<network>
+				<client_server use_encryption="false"/>
+			</network>
+		</server>
+		<compiler>
+			<options error_file="true"/>
+		</compiler>
+		<database>
+			<misc standard_xpath="false"/>
+		</database>
+	</com.4d>
+</preferences>

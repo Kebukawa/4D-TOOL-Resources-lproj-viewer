@@ -1,0 +1,16 @@
+{
+	"forms": {
+		"list_images": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"destination": "detailScreen"
+		},
+		"list_command": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"destination": "detailScreen"
+		},
+		"list_resources": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"destination": "detailScreen"
+		}
+	}
+}

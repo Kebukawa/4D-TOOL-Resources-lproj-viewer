@@ -1,0 +1,197 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 65,
+					"left": 23,
+					"width": 581,
+					"height": 624,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"rowHeight": "100px",
+					"dataSource": "OBJ_FORM.pict_all",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.pict",
+							"dataSourceTypeHint": "picture",
+							"width": 150,
+							"minWidth": 100,
+							"maxWidth": 320,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Image"
+							},
+							"footer": {
+								"name": "Footer1"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.name+\"\\r\"+This:C1470.file_path",
+							"width": 416,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "top",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Note"
+							},
+							"footer": {
+								"name": "Footer2"
+							}
+						}
+					]
+				},
+				"SearchPicker": {
+					"type": "subform",
+					"top": 20,
+					"left": 1012,
+					"width": 199,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "fv_keyword",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 65,
+					"left": 612,
+					"width": 5,
+					"height": 624,
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 65,
+					"left": 624,
+					"width": 581,
+					"height": 624,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"rowHeight": "100px",
+					"dataSource": "OBJ_FORM.pict_sel",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/List Box1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.pict",
+							"dataSourceTypeHint": "picture",
+							"width": 150,
+							"minWidth": 100,
+							"maxWidth": 320,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Image"
+							},
+							"footer": {
+								"name": "Footer3"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.name+\"\\r\"+This:C1470.file_path",
+							"width": 416,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "top",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Note"
+							},
+							"footer": {
+								"name": "Footer4"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"methods": {
+		"Get_list_command": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"MENU_display_command": {
+			"timeStamp": "2021-12-03T01:59:46Z"
+		},
+		"MENU_display_image": {
+			"timeStamp": "2021-12-03T01:59:46Z"
+		},
+		"____Method____": {
+			"timeStamp": "2021-12-03T02:01:30Z",
+			"attributes": {
+				"preemptive": "capable"
+			}
+		},
+		"Get_list_resources": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Error_Method": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Get_list_pictures": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Variables": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Methods": {
+			"timeStamp": "2021-12-03T01:59:46Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"MENU_display_resources": {
+			"timeStamp": "2021-12-03T01:59:46Z"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Resources-lproj-viewer" uuid="5CF771F417AE4F339016038B3DE79D2F" collation_locale="ja">
+	<schema name="DEFAULT_SCHEMA"/>
+	<base_extra package_name="Resources-lproj-viewer" structure_file_name="Resources-lproj-viewer" data_file_path=":Resources-lproj-viewer.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>
