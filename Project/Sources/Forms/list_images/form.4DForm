@@ -46,7 +46,7 @@
 					"listboxType": "collection",
 					"movableRows": false,
 					"rowHeight": "100px",
-					"dataSource": "OBJ_FORM.pict_all",
+					"dataSource": "Form:C1466.pict_all",
 					"scrollbarHorizontal": "automatic",
 					"events": [
 						"onClick",
@@ -126,7 +126,8 @@
 					"height": 624,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingY": "grow"
 				},
 				"List Box1": {
 					"type": "listbox",
@@ -140,7 +141,7 @@
 					"listboxType": "collection",
 					"movableRows": false,
 					"rowHeight": "100px",
-					"dataSource": "OBJ_FORM.pict_sel",
+					"dataSource": "Form:C1466.pict_sel",
 					"scrollbarHorizontal": "automatic",
 					"method": "ObjectMethods/List Box1.4dm",
 					"events": [
@@ -193,5 +194,10 @@
 				}
 			}
 		}
-	]
+	],
+	"geometryStamp": 1,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

@@ -1,12 +1,7 @@
 {
-	"destination": "detailScreen",
 	"rightMargin": 19,
 	"bottomMargin": 20,
 	"menuBar": "メニューバー#1",
-	"markerHeader": 15,
-	"markerBody": 200,
-	"markerBreak": 220,
-	"markerFooter": 240,
 	"events": [
 		"onLoad",
 		"onUnload"
@@ -32,7 +27,7 @@
 					"resizingMode": "legacy",
 					"listboxType": "collection",
 					"movableRows": false,
-					"dataSource": "OBJ_FORM.resources_all",
+					"dataSource": "Form:C1466.resources_all",
 					"scrollbarHorizontal": "automatic",
 					"events": [
 						"onClick",
@@ -148,7 +143,7 @@
 					"resizingMode": "legacy",
 					"listboxType": "collection",
 					"movableRows": false,
-					"dataSource": "OBJ_FORM.resources_sel",
+					"dataSource": "Form:C1466.resources_sel",
 					"scrollbarHorizontal": "automatic",
 					"method": "ObjectMethods/List Box 2.4dm",
 					"events": [
@@ -238,9 +233,16 @@
 					"height": 624,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingY": "grow"
 				}
 			}
 		}
-	]
+	],
+	"geometryStamp": 1,
+	"destination": "detailScreen",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

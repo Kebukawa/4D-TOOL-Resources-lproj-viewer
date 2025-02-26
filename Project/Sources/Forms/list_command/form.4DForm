@@ -31,7 +31,7 @@
 					"resizingMode": "legacy",
 					"listboxType": "collection",
 					"movableRows": false,
-					"dataSource": "OBJ_FORM.commands_all",
+					"dataSource": "Form:C1466.commands_all",
 					"scrollbarHorizontal": "automatic",
 					"method": "ObjectMethods/List Box.4dm",
 					"events": [
@@ -114,7 +114,7 @@
 					"resizingMode": "legacy",
 					"listboxType": "collection",
 					"movableRows": false,
-					"dataSource": "OBJ_FORM.commands_sel",
+					"dataSource": "Form:C1466.commands_sel",
 					"scrollbarHorizontal": "automatic",
 					"method": "ObjectMethods/List Box1.4dm",
 					"events": [
@@ -165,5 +165,9 @@
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

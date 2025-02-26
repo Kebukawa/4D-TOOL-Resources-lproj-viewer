@@ -30,12 +30,12 @@ Case of
 	: (Form event code:C388=On Data Change:K2:15)
 		
 		If (fv_keyword#"")
-			OBJ_FORM.commands_sel:=OBJ_FORM.commands_all.query("command = :1"; "@"+fv_keyword+"@")
+			Form:C1466.commands_sel:=Form:C1466.commands_all.query("command = :1"; "@"+fv_keyword+"@")
 		Else 
-			OBJ_FORM.commands_sel:=New collection:C1472
+			Form:C1466.commands_sel:=New collection:C1472
 		End if 
 		
-		OBJECT Get pointer:C1124(Object named:K67:5; "result number")->:=OBJ_FORM.commands_sel.length
+		OBJECT Get pointer:C1124(Object named:K67:5; "result number")->:=Form:C1466.commands_sel.length
 		
 		
 		

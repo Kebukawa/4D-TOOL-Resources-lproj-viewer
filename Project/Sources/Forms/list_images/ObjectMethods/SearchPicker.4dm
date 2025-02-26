@@ -31,20 +31,20 @@ Case of
 		
 		//C_COLLECTION($item)
 		
-		OBJ_FORM.pict_sel:=New collection:C1472
+		Form:C1466.pict_sel:=New collection:C1472
 		
 		If (fv_keyword#"")
-			OBJ_FORM.pict_sel:=OBJ_FORM.pict_all.query("file_path = :1"; "@"+fv_keyword+"@")
+			Form:C1466.pict_sel:=Form:C1466.pict_all.query("file_path = :1"; "@"+fv_keyword+"@")
 		Else 
-			OBJ_FORM.pict_sel:=New collection:C1472
+			Form:C1466.pict_sel:=New collection:C1472
 		End if 
 		
-		OBJECT Get pointer:C1124(Object named:K67:5; "result number")->:=OBJ_FORM.pict_sel.length
+		OBJECT Get pointer:C1124(Object named:K67:5; "result number")->:=Form:C1466.pict_sel.length
 		
 		
-		If (False:C215)  // (OBJ_FORM.resources_sel.length>0)
-			For ($i; 1; OBJ_FORM.pict_all.length)
-				$code:=Choose:C955(OBJ_FORM.pict_sel.query("resname = :1"; OBJ_FORM.pict_all[$i-1].resname).length=1; 0x00FFFF00; -255)
+		If (False:C215)  // (Form.resources_sel.length>0)
+			For ($i; 1; Form:C1466.pict_all.length)
+				$code:=Choose:C955(Form:C1466.pict_sel.query("resname = :1"; Form:C1466.pict_all[$i-1].resname).length=1; 0x00FFFF00; -255)
 				LISTBOX SET ROW COLOR:C1270(*; "List Box"; $i; $code; lk background color:K53:25)
 			End for 
 		End if 

@@ -11,7 +11,7 @@ Case of
 		
 		If ($row>0)
 			
-			$path:=OBJ_FORM.current_path+OBJ_FORM.pict_sel[$row-1].file_path
+			$path:=Form:C1466.current_path+Form:C1466.pict_sel[$row-1].file_path
 			SHOW ON DISK:C922($path)
 			
 		End if 

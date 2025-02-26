@@ -1,15 +1,15 @@
 {
 	"forms": {
 		"list_images": {
-			"timeStamp": "2021-12-03T01:59:46Z",
+			"timeStamp": "2024-10-11T02:50:13Z",
 			"destination": "detailScreen"
 		},
 		"list_command": {
-			"timeStamp": "2021-12-03T01:59:46Z",
+			"timeStamp": "2024-10-11T02:50:13Z",
 			"destination": "detailScreen"
 		},
 		"list_resources": {
-			"timeStamp": "2021-12-03T01:59:46Z",
+			"timeStamp": "2024-10-11T02:51:47Z",
 			"destination": "detailScreen"
 		}
 	}
