@@ -32,7 +32,7 @@
 				{
 					"title": "リソースリスト（すべて）",
 					"method": "MENU_display_resources",
-					"parameter": "ALL"
+					"parameter": "all"
 				},
 				{
 					"title": "イメージリスト",

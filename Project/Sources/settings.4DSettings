@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="7">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="8">
 	<com.4d>
 		<deployment>
 			<options/>
@@ -26,5 +26,10 @@
 		<database>
 			<misc standard_xpath="false"/>
 		</database>
+		<interface>
+			<shortcuts>
+				<accept_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+			</shortcuts>
+		</interface>
 	</com.4d>
 </preferences>

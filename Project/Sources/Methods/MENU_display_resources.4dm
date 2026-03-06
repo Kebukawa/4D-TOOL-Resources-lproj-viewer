@@ -1,44 +1,37 @@
 //%attributes = {}
 
-C_OBJECT:C1216($1)
+#DECLARE($option : Object)
 
-C_TEXT:C284($process_mane)
+var $process_mane : Text
 $process_mane:="display resources"
 
-
+var $my_name : Text
 $my_name:=Current process name:C1392
 
 Case of 
+		//MARK:-
+	: ($my_name#($process_mane+"@"))
 		
-	: ($my_name#$process_mane)
+		var $param : Text
+		$param:=Get selected menu item parameter:C1005
 		
-		C_TEXT:C284($text)
-		$text:=Get selected menu item parameter:C1005
-		
-		If ($text="")
-			
-			$ref_proc:=New process:C317(Current method name:C684; 0; $process_mane)
-			
+		If ($param="")
+			$ref_proc:=New process:C317(Current method name:C684; 0; $process_mane; *)
 		Else 
-			
-			$obj:=New object:C1471
-			$obj.option:=$text
-			
-			$ref_proc:=New process:C317(Current method name:C684; 0; $process_mane; $obj)
-			
+			$ref_proc:=New process:C317(Current method name:C684; 0; $process_mane+"("+$param+")"; {scope: $param}; *)
 		End if 
 		
+		BRING TO FRONT:C326($ref_proc)
+		
+		
+		//MARK:-
 	Else 
 		
-		
-		If (Count parameters:C259=0)
-			$obj:=New object:C1471
-		Else 
-			$obj:=$1
+		If ($option=Null:C1517)
+			$option:=New object:C1471
 		End if 
 		
-		
 		$ref_window:=Open form window:C675("list_resources")
-		DIALOG:C40("list_resources"; $obj)
+		DIALOG:C40("list_resources"; $option)
 		
 End case 

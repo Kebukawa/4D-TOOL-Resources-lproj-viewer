@@ -1,2 +1,3 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284(fv_keyword)
+
+C_TEXT:C284(searchKeyword)

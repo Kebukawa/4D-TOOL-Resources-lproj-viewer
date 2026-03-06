@@ -1,36 +1,25 @@
-//Searchpicker sample code
+/*
+
+Searchpicker
+
+*/
+
+
 
 
 Case of 
-		
+		//MARK:-
 	: (Form event code:C388=On Load:K2:1)
 		
-		// Init the var itself
-		// this can be done anywhere else in your code
-		
-		C_TEXT:C284(fv_keyword)
-		
-		// the let's customise the SearchPicker (if needed)
-		
-		C_BOOLEAN:C305($Customise)
-		$Customise:=True:C214
-		
-		C_TEXT:C284($ObjectName)
-		$ObjectName:=OBJECT Get name:C1087(Object current:K67:2)
-		
-		// The exemple below shows how to set a label (ex : "name") inside the search zone
-		
-		If ($Customise)
-			
-			SearchPicker SET HELP TEXT($ObjectName; "Command")
-			
-		End if 
+		var searchKeyword : Text
+		SearchPicker SET HELP TEXT(FORM Event:C1606.objectName; "Command")
 		
 		
+		//MARK:-
 	: (Form event code:C388=On Data Change:K2:15)
 		
-		If (fv_keyword#"")
-			Form:C1466.commands_sel:=Form:C1466.commands_all.query("command = :1"; "@"+fv_keyword+"@")
+		If (searchKeyword#"")
+			Form:C1466.commands_sel:=Form:C1466.commands_all.query("command = :1"; "@"+searchKeyword+"@")
 		Else 
 			Form:C1466.commands_sel:=New collection:C1472
 		End if 

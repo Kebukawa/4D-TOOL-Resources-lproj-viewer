@@ -16,91 +16,14 @@
 		null,
 		{
 			"objects": {
-				"List Box": {
-					"type": "listbox",
-					"top": 65,
-					"left": 18,
-					"width": 586,
-					"height": 624,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"resizingMode": "legacy",
-					"listboxType": "collection",
-					"movableRows": false,
-					"dataSource": "Form:C1466.resources_all",
-					"scrollbarHorizontal": "automatic",
-					"events": [
-						"onClick",
-						"onDataChange",
-						"onSelectionChange",
-						"onHeaderClick"
-					],
-					"columns": [
-						{
-							"name": "Column1",
-							"dataSource": "This:C1470.resname",
-							"width": 160,
-							"minWidth": 10,
-							"maxWidth": 32000,
-							"events": [
-								"onClick",
-								"onDataChange"
-							],
-							"header": {
-								"name": "Header1",
-								"text": "Name"
-							},
-							"footer": {
-								"name": "Footer1"
-							}
-						},
-						{
-							"name": "Column2",
-							"dataSource": "This:C1470.source",
-							"width": 160,
-							"minWidth": 10,
-							"maxWidth": 32000,
-							"events": [
-								"onClick",
-								"onDataChange"
-							],
-							"header": {
-								"name": "Header2",
-								"text": "Source"
-							},
-							"footer": {
-								"name": "Footer2"
-							}
-						},
-						{
-							"name": "Column3",
-							"dataSource": "This:C1470.target",
-							"width": 251,
-							"minWidth": 10,
-							"maxWidth": 32000,
-							"truncateMode": "none",
-							"events": [
-								"onClick",
-								"onDataChange"
-							],
-							"header": {
-								"name": "Header3",
-								"text": "Traget"
-							},
-							"footer": {
-								"name": "Footer3"
-							}
-						}
-					]
-				},
 				"SearchPicker": {
 					"type": "subform",
 					"top": 20,
-					"left": 1012,
+					"left": 1001,
 					"width": 199,
 					"height": 30,
 					"sizingX": "move",
-					"dataSource": "fv_keyword",
+					"dataSource": "searchKeyword",
 					"dataSourceTypeHint": "text",
 					"detailForm": "SearchPicker",
 					"deletableInList": false,
@@ -111,18 +34,16 @@
 					"method": "ObjectMethods/SearchPicker.4dm",
 					"events": [
 						"onLoad",
-						"onValidate",
-						"onLosingFocus",
 						"onDataChange"
 					]
 				},
 				"result number": {
 					"type": "input",
 					"top": 27,
-					"left": 906,
-					"width": 86,
+					"left": 20,
+					"width": 201,
 					"height": 17,
-					"dataSourceTypeHint": "number",
+					"dataSourceTypeHint": "text",
 					"focusable": false,
 					"enterable": false,
 					"contextMenu": "none",
@@ -130,14 +51,17 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none"
 				},
-				"List Box 2": {
+				"List Box (resources_sel)": {
 					"type": "listbox",
 					"top": 65,
-					"left": 625,
-					"width": 586,
-					"height": 624,
+					"left": 20,
+					"width": 1180,
+					"height": 615,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"resizingMode": "legacy",
@@ -145,10 +69,13 @@
 					"movableRows": false,
 					"dataSource": "Form:C1466.resources_sel",
 					"scrollbarHorizontal": "automatic",
-					"method": "ObjectMethods/List Box 2.4dm",
+					"method": "ObjectMethods/List Box.4dm",
 					"events": [
+						"onClick",
 						"onDoubleClick"
 					],
+					"bottom": 680,
+					"right": 1200,
 					"columns": [
 						{
 							"name": "Column4",
@@ -166,7 +93,8 @@
 							},
 							"footer": {
 								"name": "Footer4"
-							}
+							},
+							"enterable": false
 						},
 						{
 							"name": "Column5",
@@ -184,7 +112,8 @@
 							},
 							"footer": {
 								"name": "Footer5"
-							}
+							},
+							"enterable": false
 						},
 						{
 							"name": "Column6",
@@ -203,11 +132,12 @@
 							},
 							"footer": {
 								"name": "Footer6"
-							}
+							},
+							"enterable": false
 						},
 						{
 							"name": "Column7",
-							"dataSource": "This:C1470.file_path",
+							"dataSource": "Substring:C12(This:C1470.path; Form:C1466.rootPosition)",
 							"width": 120,
 							"minWidth": 10,
 							"maxWidth": 32000,
@@ -221,28 +151,25 @@
 							},
 							"footer": {
 								"name": "Footer7"
-							}
+							},
+							"enterable": false
 						}
 					]
-				},
-				"Splitter": {
-					"type": "splitter",
-					"top": 65,
-					"left": 612,
-					"width": 5,
-					"height": 624,
-					"events": [
-						"onClick"
-					],
-					"sizingY": "grow"
 				}
 			}
 		}
 	],
-	"geometryStamp": 1,
+	"geometryStamp": 22,
 	"destination": "detailScreen",
 	"$4d": {
 		"version": "1",
 		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
 	}
 }

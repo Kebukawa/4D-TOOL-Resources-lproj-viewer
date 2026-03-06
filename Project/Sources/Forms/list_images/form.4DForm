@@ -102,7 +102,7 @@
 					"width": 199,
 					"height": 30,
 					"sizingX": "move",
-					"dataSource": "fv_keyword",
+					"dataSource": "Form:C1466.keyword",
 					"dataSourceTypeHint": "text",
 					"detailForm": "SearchPicker",
 					"deletableInList": false,
