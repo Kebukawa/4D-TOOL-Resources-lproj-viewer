@@ -55,7 +55,7 @@ backupHistory.json
 ehthumbs.db
 Thumbs.db
 
-Resources/php.ini
+#Resources/php.ini
 
 Components/
 !Build/Components
