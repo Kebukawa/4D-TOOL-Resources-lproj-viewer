@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+   Translation file for Resources-lproj-viewer.
+   Copyright (C) Tomohide Kebukawa.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+<body>
+    <group id="10001" resname="PopupMenuResources">
+        <trans-unit id="1" resname="CommonMenuShowOnDisk">
+            <source>Show on disk</source>
+            <target>Show on disk</target>
+        </trans-unit>
+    </group>
+</body>
+</xliff>

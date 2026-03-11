@@ -76,6 +76,8 @@
 					],
 					"bottom": 680,
 					"right": 1200,
+					"selectionMode": "single",
+					"currentItemSource": "Form:C1466.listCurrent",
 					"columns": [
 						{
 							"name": "Column4",
